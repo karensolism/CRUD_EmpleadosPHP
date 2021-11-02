@@ -1,11 +1,6 @@
 name: BuildTestCRUD
  
-on:
- push:
-   branches:
-     - master
-     - features/*
- pull_request:
+on: [push]
  
 jobs:
  tests:

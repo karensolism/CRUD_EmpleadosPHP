@@ -54,7 +54,8 @@ switch($accion){
         $sentencia->execute();
 
         header('Location: index.php');
-        
+        //echo $Id;
+        //echo "Editar";
     break;
     case "btn_eliminar":
         $sentencia=$conn->prepare("DELETE FROM empleados WHERE Id=:Id"); 
